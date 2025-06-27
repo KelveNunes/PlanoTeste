@@ -1,0 +1,102 @@
+[
+    {
+        "Empresa": "F",
+        "Lancamento": "01/05/2022",
+        "Pago": 0
+    },
+    {
+        "Empresa": "A",
+        "Lancamento": "03/04/2022",
+        "Pago": 1
+    },
+    {
+        "Empresa": "C",
+        "Lancamento": "04/04/2022",
+        "Pago": 1
+    },
+    {
+        "Empresa": "A",
+        "Lancamento": "06/06/2022",
+        "Pago": 1
+    },
+    {
+        "Empresa": "B",
+        "Lancamento": "20/06/2022",
+        "Pago": 0
+    },
+    {
+        "Empresa": "B",
+        "Lancamento": "21/06/2022",
+        "Pago": 0
+    },
+    {
+        "Empresa": "I",
+        "Lancamento": "01/05/2022",
+        "Pago": 1
+    },
+    {
+        "Empresa": "I",
+        "Lancamento": "03/04/2022",
+        "Pago": 0
+    },
+    {
+        "Empresa": "F",
+        "Lancamento": "04/04/2022",
+        "Pago": 1
+    },
+    {
+        "Empresa": "F",
+        "Lancamento": "06/06/2022",
+        "Pago": 0
+    },
+    {
+        "Empresa": "A",
+        "Lancamento": "20/06/2022",
+        "Pago": 0
+    },
+    {
+        "Empresa": "C",
+        "Lancamento": "21/06/2022",
+        "Pago": 0
+    },
+    {
+        "Empresa": "C",
+        "Lancamento": "12/03/2022",
+        "Pago": 1
+    },
+    {
+        "Empresa": "C",
+        "Lancamento": "14/07/2022",
+        "Pago": 1
+    },
+    {
+        "Empresa": "C",
+        "Lancamento": "15/07/2022",
+        "Pago": 1
+    },
+    {
+        "Empresa": "B",
+        "Lancamento": "12/07/2022",
+        "Pago": 0
+    },
+    {
+        "Empresa": "I",
+        "Lancamento": "15/07/2022",
+        "Pago": 1
+    },
+    {
+        "Empresa": "I",
+        "Lancamento": "16/06/2022",
+        "Pago": 1
+    },
+    {
+        "Empresa": "A",
+        "Lancamento": "10/05/2022",
+        "Pago": 0
+    },
+    {
+        "Empresa": "B",
+        "Lancamento": "12/03/2022",
+        "Pago": 1
+    }
+]
