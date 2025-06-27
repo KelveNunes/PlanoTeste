@@ -33,7 +33,7 @@ public class Ranking {
             ObjectMapper mapper = new ObjectMapper();
             File file = new File("C:\\Users\\kelve\\OneDrive\\Documentos\\Java\\Projetos\\PlanoTeste2\\src\\main\\java\\org\\example\\dados.json");
 
-            List<Pagamento> pagamentos = mapper.readValue(file, new TypeReference<List<Pagamento>>() {});
+            List<Pagamento> pagamentos = mapper.readValue(file, new TypeReference<>() {});
 
             List<ResumoEmpresa> resumos = new ArrayList<>();
             for (Pagamento p : pagamentos) {
@@ -54,7 +54,7 @@ public class Ranking {
                 }
             }
 
-            resumos.sort(new Comparator<ResumoEmpresa>() {
+            resumos.sort(new Comparator<>() {
                 public int compare(ResumoEmpresa a, ResumoEmpresa b) {
                     double mediaA = (double) a.pagos / a.total;
                     double mediaB = (double) b.pagos / b.total;
