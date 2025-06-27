@@ -8,6 +8,7 @@ import java.util.*;
 
 class Pagamento {
     public String Empresa;
+    public String Lancamento;
     public int Pago;
 
     public Pagamento() {}
