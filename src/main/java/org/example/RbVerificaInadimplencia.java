@@ -13,7 +13,11 @@ public class RbVerificaInadimplencia {
     public static void main(String[] args) {
         try {
             ObjectMapper mapper = new ObjectMapper();
-            File dadosEmpresas = new File("src/main/resources/dados.json");
+            File dadosEmpresas = new File(
+                    Objects.requireNonNull(
+                            RbVerificaInadimplencia.class.getClassLoader().getResource("dados.json")
+                    ).getFile()
+            );
 
             List<Pagamento> pagamentos = mapper.readValue(dadosEmpresas, new TypeReference<>() {});
 
