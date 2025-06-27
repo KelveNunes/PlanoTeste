@@ -31,7 +31,7 @@ public class Ranking {
     public static void main(String[] args) {
         try {
             ObjectMapper mapper = new ObjectMapper();
-            File file = new File("C:\\Users\\kelve\\OneDrive\\Documentos\\Java\\Projetos\\PlanoTeste2\\src\\main\\java\\org\\example\\dados.json");
+            File file = new File("src/main/resources/dados.json");
 
             List<Pagamento> pagamentos = mapper.readValue(file, new TypeReference<>() {});
 
