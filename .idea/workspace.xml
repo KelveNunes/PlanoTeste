@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98f34a8c-4816-4e20-95b0-ce5cd93f5164" name="Changes" comment="" />
+    <list default="true" id="98f34a8c-4816-4e20-95b0-ce5cd93f5164" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Ranking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RbVerificaInadimplencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dados.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dados.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,14 +46,17 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kelve\OneDrive\Documentos\Java\Projetos\PlanoTeste2\src\main\java\org\example" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kelve\OneDrive\Documentos\Java\Projetos\PlanoTeste2\src\main\resources" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration name="Ranking" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Ranking" />
+    <configuration name="RbVerificaInadimplencia" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.RbVerificaInadimplencia" />
       <module name="PlanoTeste2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -59,7 +66,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Ranking" />
+        <item itemvalue="Application.RbVerificaInadimplencia" />
       </list>
     </recent_temporary>
   </component>
@@ -79,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1751034006648</updated>
-      <workItem from="1751034007732" duration="3632000" />
+      <workItem from="1751034007732" duration="4302000" />
     </task>
     <servers />
   </component>

@@ -2,54 +2,36 @@ package org.example;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.example.domain.Pagamento;
+import org.example.domain.ResumoEmpresa;
 
 import java.io.File;
 import java.util.*;
 
-class Pagamento {
-    public String Empresa;
-    public String Lancamento;
-    public int Pago;
-
-    public Pagamento() {}
-}
-
-class ResumoEmpresa {
-    public String empresa;
-    public int pagos;
-    public int total;
-
-    public ResumoEmpresa(String empresa) {
-        this.empresa = empresa;
-        this.pagos = 0;
-        this.total = 0;
-    }
-}
-
-public class Ranking {
+public class RbVerificaInadimplencia {
 
     public static void main(String[] args) {
         try {
             ObjectMapper mapper = new ObjectMapper();
-            File file = new File("src/main/resources/dados.json");
+            File dadosEmpresas = new File("src/main/resources/dados.json");
 
-            List<Pagamento> pagamentos = mapper.readValue(file, new TypeReference<>() {});
+            List<Pagamento> pagamentos = mapper.readValue(dadosEmpresas, new TypeReference<>() {});
 
             List<ResumoEmpresa> resumos = new ArrayList<>();
             for (Pagamento p : pagamentos) {
                 ResumoEmpresa resumo = null;
                 for (ResumoEmpresa r : resumos) {
-                    if (r.empresa.equals(p.Empresa)) {
+                    if (r.empresa.equals(p.nomeEmpresa)) {
                         resumo = r;
                         break;
                     }
                 }
                 if (resumo == null) {
-                    resumo = new ResumoEmpresa(p.Empresa);
+                    resumo = new ResumoEmpresa(p.nomeEmpresa);
                     resumos.add(resumo);
                 }
                 resumo.total++;
-                if (p.Pago == 1) {
+                if (p.pago == 1) {
                     resumo.pagos++;
                 }
             }
@@ -62,7 +44,7 @@ public class Ranking {
                 }
             });
 
-            System.out.println("Ranking dos bons pagadores:");
+            System.out.println("RbVerificaInadimplencia dos bons pagadores:");
             int posicao = 1;
             for (ResumoEmpresa r : resumos) {
                 double porcentagem = (double) r.pagos / r.total * 100;
